@@ -37,14 +37,6 @@ module.exports = {
         test: /\.(scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
-      // { test: /\.png$/, type: 'asset/resource' }
-      // {
-      //   test: /\.html$/i,
-      //   loader: 'html-loader',
-      //   options: {
-      //     minimize: false
-      //   }
-      // },
     ],
   },
 };
