@@ -7,7 +7,7 @@
     "build": "webpack --mode=production",
     "serve": "webpack serve",
     "lint": "npx prettier --check **/*.{html,scss} && npx stylelint **/*.scss",
-    "lint:fix": "npx prettier **/*.{html,scss} && npx stylelint **/*.scss --fix"
+    "lint:fix": "npx prettier -w **/*.{html,scss} && npx stylelint **/*.scss --fix"
   },
   "repository": {
     "type": "git",
