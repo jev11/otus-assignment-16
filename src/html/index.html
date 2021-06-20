@@ -1,15 +1,35 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otus Personal Blog</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <%= require('html-loader!./partials/header.html').default %>
-  <main>
-    <p>Welcome to my blog</p>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otus Personal Blog</title>
+  </head>
+  <body>
+    <%= require('html-loader!./partials/header.html').default %>
+    <main class="container">
+      <div class="general_block">
+        <h1 class="general_block__header">Welcome to my blog</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+          nam eaque eligendi rem sint corporis adipisci debitis placeat tenetur
+          praesentium facere vel nisi nihil nemo, velit quae sapiente libero
+          ratione?
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, magni
+          repellendus modi saepe mollitia quod debitis, voluptas repellat eum
+          facilis dignissimos explicabo asperiores totam quaerat praesentium,
+          corporis blanditiis accusamus quidem.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non similique
+          enim accusamus eum voluptates, amet blanditiis, quae nobis minus,
+          praesentium voluptatum nesciunt! Tenetur quas dicta aspernatur modi
+          labore sapiente assumenda!
+        </p>
+      </div>
+    </main>
+  </body>
 </html>

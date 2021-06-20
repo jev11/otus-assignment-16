@@ -1,0 +1,68 @@
+// @import url(http://fonts.googleapis.com/css?family=Karma:400,700);
+
+$colors: (
+  backgroundLight: #f3f0d7,
+  backgroundDark: #cee5d0,
+  fontLight: #d8b384,
+  fontDark: #5e454b,
+);
+
+body {
+  background-color: map-get($map: $colors, $key: backgroundLight);
+  margin: 0;
+  font-family: "Karma", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navigation {
+  background-color: map-get($map: $colors, $key: backgroundDark);
+  display: flex;
+  justify-content: space-evenly;
+
+  &__link {
+    text-decoration: none;
+    color: map-get($map: $colors, $key: fontDark);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+}
+
+
+.article {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: map-get($map: $colors, $key: backgroundDark);
+  max-width: 80%;
+
+  &__header {
+    color: map-get($map: $colors, $key: fontLight);
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    margin-top: 0.1rem;
+  }
+
+  &__text {
+    color: map-get($map: $colors, $key: fontDark);
+  }
+}
+
+.general_block {
+  background-color: map-get($map: $colors, $key: backgroundDark);
+  margin: 2rem;
+  padding: 1rem;
+  color: map-get($map: $colors, $key: fontDark);
+  max-width: 80%;
+
+  &__header {
+    color: map-get($map: $colors, $key: fontLight);
+    text-align: center;
+    width: 100%;
+  }
+}
