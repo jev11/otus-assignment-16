@@ -1,5 +1,4 @@
-
-@import url('http://fonts.googleapis.com/css?family=Karma:400,700');
+@import url("http://fonts.googleapis.com/css?family=Karma:400,700");
 $colors: (
   background-light: #f3f0d7,
   background-dark: #cee5d0,
@@ -9,7 +8,7 @@ $colors: (
 
 body {
   background-color: map-get($map: $colors, $key: background-light);
-  font-family: 'Karma', sans-serif;
+  font-family: "Karma", sans-serif;
   margin: 0;
 }
 
