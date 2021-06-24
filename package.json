@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack --mode=production",
     "serve": "webpack serve",
-    "lint": "npx prettier --check **/*.{html,scss} && npx stylelint **/*.scss",
-    "lint:fix": "npx prettier -w **/*.{html,scss} && npx stylelint **/*.scss"
+    "lint": "npx prettier --check src/**/*.{html,scss} && npx stylelint src/**/*.scss",
+    "lint:fix": "npx prettier -w src/**/*.{html,scss} && npx stylelint src/**/*.scss"
   },
   "repository": {
     "type": "git",
