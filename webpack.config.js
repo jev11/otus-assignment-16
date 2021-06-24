@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var glob = require("glob")
 
 pages =  glob.sync("*", {
@@ -23,6 +24,7 @@ module.exports = {
     minimize: false,
   },
   plugins: [
+    new MiniCssExtractPlugin(),
     ...pages.map((page) => //зачем точки?
       new HtmlWebpackPlugin({
         filename: page,
@@ -35,7 +37,7 @@ module.exports = {
     rules: [
       {
         test: /\.(scss|css)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
