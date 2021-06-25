@@ -29,63 +29,55 @@ body {
 .footer {
   background-color: map-get($map: $colors, $key: background-dark);
   bottom: 0;
-  display: flex;
-  justify-content: space-evenly;
   left: 0;
   position: absolute;
   right: 0;
+  text-align: center;
+  width: 100%;
+
+  &__block {
+    background-color: map-get($map: $colors, $key: background-dark);
+    color: map-get($map: $colors, $key: font-dark);
+    display: inline-block;
+    margin: 2rem;
+    max-width: 40%;
+  }
 }
 
 .container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.navigation {
-  background-color: map-get($map: $colors, $key: background-dark);
-  display: flex;
-  justify-content: space-evenly;
-
-  &__link {
-    color: map-get($map: $colors, $key: font-dark);
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-    text-decoration: none;
-  }
-}
-
-.article {
-  background-color: map-get($map: $colors, $key: background-dark);
-  margin: 2rem;
-  max-width: 50rem;
-  padding: 1rem;
-  // margin-bottom: 4rem;
-
-  &__header {
-    color: map-get($map: $colors, $key: font-light);
-    font-weight: bold;
-    margin-bottom: 0.2rem;
-    margin-top: 0.1rem;
-  }
-
-  &__text {
-    color: map-get($map: $colors, $key: font-dark);
-  }
+  text-align: center;
+  width: 100%;
 }
 
 .general-block {
   background-color: map-get($map: $colors, $key: background-dark);
   color: map-get($map: $colors, $key: font-dark);
+  display: inline-block;
   margin: 2rem;
-  max-width: 50rem;
   padding: 1rem;
+  width: 50%;
 
   &__header {
     color: map-get($map: $colors, $key: font-light);
     text-align: center;
     width: 100%;
+  }
+}
+
+.navigation {
+  background-color: map-get($map: $colors, $key: background-dark);
+  text-align: center;
+  width: 100%;
+
+  &__link {
+    color: map-get($map: $colors, $key: font-dark);
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
   }
 }
