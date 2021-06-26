@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%= require('html-loader!./partials/header.html').default %>
+    <div class="container">
+      <div class="general-block">
+        <h1 class="general-block__header">Feedback</h1>
+        <form class="general-block__form">
+          <p>
+            Email address:
+            <input type="text" name="email" size="20" , maxlength="40" />
+          </p>
+          <textarea name="comments" cols="60" rows="15">
+Enter your comments</textarea
+          >
+          <br />
+          <input type="submit" name="Submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <%= require('html-loader!./partials/footer.html').default %>
+  </body>
+</html>

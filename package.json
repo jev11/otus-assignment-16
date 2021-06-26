@@ -1,0 +1,42 @@
+{
+  "name": "otus-assignment-16",
+  "version": "1.0.0",
+  "description": "Personal blog project",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "serve": "webpack serve",
+    "lint": "npx prettier --check src/**/*.{html,scss} && npx stylelint src/**/*.scss",
+    "lint:fix": "npx prettier -w src/**/*.{html,scss} && npx stylelint src/**/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jev11/otus-assignment-16.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jev11/otus-assignment-16/issues"
+  },
+  "homepage": "https://github.com/jev11/otus-assignment-16#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "glob": "^7.1.7",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "path": "^0.12.7",
+    "prettier": "^2.3.1",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.19.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

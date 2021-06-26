@@ -1,0 +1,81 @@
+@import url("http://fonts.googleapis.com/css?family=Karma:400,700");
+$colors: (
+  background-light: #f3f0d7,
+  background-dark: #cee5d0,
+  font-light: #d8b384,
+  font-dark: #5e454b,
+);
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: map-get($map: $colors, $key: background-light);
+  font-family: "Karma", sans-serif;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 10rem;
+  position: relative;
+  width: 100vw;
+}
+
+.footer {
+  background-color: map-get($map: $colors, $key: background-dark);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+
+  &__block {
+    background-color: map-get($map: $colors, $key: background-dark);
+    color: map-get($map: $colors, $key: font-dark);
+    display: inline-block;
+    margin: 2rem;
+    max-width: 40%;
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+.general-block {
+  background-color: map-get($map: $colors, $key: background-dark);
+  color: map-get($map: $colors, $key: font-dark);
+  display: inline-block;
+  margin: 2rem;
+  padding: 1rem;
+  width: 50%;
+
+  &__header {
+    color: map-get($map: $colors, $key: font-light);
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.navigation {
+  background-color: map-get($map: $colors, $key: background-dark);
+  text-align: center;
+
+  &__link {
+    color: map-get($map: $colors, $key: font-dark);
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+}
